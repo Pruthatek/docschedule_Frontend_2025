@@ -87,7 +87,7 @@ const TC = () => {
                 return (
 
                 
-              <p className=' text-[#383A3E] font-medium md:text-[14px] text-[12px]  '> <b>{index+1}. {d.name}</b> {d.text}</p>
+              <p key={index} className=' text-[#383A3E] font-medium md:text-[14px] text-[12px]  '> <b>{index+1}. {d.name}</b> {d.text}</p>
             )})}
               
            </div>

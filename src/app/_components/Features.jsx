@@ -46,7 +46,7 @@ const Features = () => {
       <div className="w-[90%] mx-auto grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-12">
          {data.map((d, index)=>{
             return (
-                <div className="w-[100%] h-[294px] rounded-[10px] bg-white drop-shadow-xl p-5 ">
+                <div key={index} className="w-[100%] h-[294px] rounded-[10px] bg-white drop-shadow-xl p-5 ">
                     <div style={{ backgroundColor: d.color }} className={`w-[57px] h-[57px] rounded-full flex justify-center items-center  `}>
                         <Image src={d.icon} width={24} height={24} alt={d.name} />
                     </div>
